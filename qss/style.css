@@ -12,7 +12,6 @@ QWidget#gameStart QPushButton{
 	max-width: 218px;
 	width: 218px;
 	height: 68px;
-	cursor: Poiting Hand;
 	font: 26px 'Arial';
 	color: #a27031;
 }
@@ -22,3 +21,64 @@ QWidget#gameStart QPushButton:pressed {
 QWidget#gameStart QPushButton:checked {
     background-image: url(qss/img/bigbtnpressed.png);
 }
+
+QWidget#gamePlay{
+	background: url(qss/img/bgplay.png) left top no-repeat;	
+}
+QWidget#gamePlay QPushButton{
+	min-width: 87px;
+	max-width: 87px;
+	width: 87px;
+	min-height: 35px;
+	max-height: 35px;
+	height: 35px;
+	font: 14px 'Arial';
+	color: #a8692b;
+	border: 0;
+}
+
+QWidget#gamePlay QPushButton#exitGameBtn{
+	background: url(qss/img/exitbtn.png) left top no-repeat;		
+}
+
+QWidget#gamePlay QPushButton#pauseGameBtn{
+	background: url(qss/img/pausebtn.png) left top no-repeat;	
+}
+
+
+QWidget#gamePlay QPushButton#restartGameBtn{
+	background: url(qss/img/restartbtn.png) left top no-repeat;	
+}
+
+QWidget#gamePlay QPushButton#restartGameBtn:pressed{
+	background: url(qss/img/restartbtnpressed.png) left top no-repeat;	
+}
+
+QWidget#gamePlay QPushButton#restartGameBtn:checked{
+	background: url(qss/img/restartbtnpressed.png) left top no-repeat;	
+}
+
+QWidget#gamePlay QPushButton#exitGameBtn:checked{
+	background: url(qss/img/exitbtnnpressed.png) left top no-repeat;	
+}
+QWidget#gamePlay QPushButton#exitGameBtn:pressed{
+	background: url(qss/img/exitbtnpressed.png) left top no-repeat;	
+}
+
+QWidget#gamePlay QPushButton#pauseGameBtn:checked{
+	background: url(qss/img/pausebtnnpressed.png) left top no-repeat;	
+}
+QWidget#gamePlay QPushButton#pauseGameBtn:pressed{
+	background: url(qss/img/pausebtnpressed.png) left top no-repeat;	
+}
+
+
+Widget#gamePlay QLabel#timerGame{
+	font: bold 12px 'Arial';
+	color: #000000;
+}
+
+
+
+
+
