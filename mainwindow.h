@@ -22,10 +22,6 @@ public:
     ~MainWindow();
     void makeTransition();
 
-private slots:
-    void on_newGameBtn_clicked();
-
-    void on_exitGameBtn_clicked();
 
 signals:
     void openWindow(QString key);

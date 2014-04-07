@@ -1,0 +1,24 @@
+QWidget#gameStart{
+	background: url(qss/img/bg.png) left top no-repeat;	
+}
+QWidget#gameTitleLabel{
+	font: 48px 'Arial';
+	color: #a27031;
+}
+QWidget#gameStart QPushButton{
+	background: url(qss/img/bigbtn.png) left top no-repeat;	
+	border: 0px;
+	min-width: 218px;
+	max-width: 218px;
+	width: 218px;
+	height: 68px;
+	cursor: Poiting Hand;
+	font: 26px 'Arial';
+	color: #a27031;
+}
+QWidget#gameStart QPushButton:pressed {
+    background-image: url(qss/img/bigbtnpressed.png);
+}
+QWidget#gameStart QPushButton:checked {
+    background-image: url(qss/img/bigbtnpressed.png);
+}

@@ -13,6 +13,7 @@ MainWindow::MainWindow(QWidget *parent) :
     youAreWinner(new QState)
 {
     ui->setupUi(this);
+
     initAllStateAndStartMachine();
 }
 
