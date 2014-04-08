@@ -4,7 +4,7 @@
 #include <QDebug>
 #include <QDir>
 #include <QString>
-QString styleSheetFromFile(QString file, QString folderForUrl);
+QString loadStyleSheetFromFileAndReplaceUrlPath(QString file, QString folderForUrl);
 
 int main(int argc, char *argv[])
 {
@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
     return a.exec();
 }
 
-QString styleSheetFromFile(QString file, QString folderForUrl)
+QString loadStyleSheetFromFileAndReplaceUrlPath(QString file, QString folderForUrl)
 {
     QFile f(file);
     f.open(QFile::ReadOnly);
