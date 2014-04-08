@@ -60,7 +60,7 @@
      </size>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="gameStart">
      <property name="autoFillBackground">
@@ -206,7 +206,21 @@
       </property>
      </widget>
     </widget>
-    <widget class="QWidget" name="gameSetting"/>
+    <widget class="QWidget" name="gameSetting">
+     <widget class="QPushButton" name="goStartScreenBtn">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>140</y>
+        <width>85</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>назад</string>
+      </property>
+     </widget>
+    </widget>
    </widget>
   </widget>
  </widget>

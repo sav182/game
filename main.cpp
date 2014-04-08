@@ -10,7 +10,9 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     QString stylSheet = loadStyleSheetFromFileAndReplaceUrlPath(a.applicationDirPath() + QString("/qss/style.css"), a.applicationDirPath());
-    qDebug() << stylSheet;
+
+   // qDebug() << stylSheet;
+
     a.setStyleSheet(stylSheet);
 
     MainWindow w;

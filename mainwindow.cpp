@@ -23,19 +23,23 @@ MainWindow::~MainWindow()
 }
 
 void MainWindow::initAllStateAndStartMachine(){
+
+    setting->assignProperty(ui->stackedWidget, "currentIndex", SETTING_SCREEN_INDEX);
+    setting->addTransition(ui->goStartScreenBtn, SIGNAL(clicked()), start);
+
     start->assignProperty(ui->stackedWidget, "currentIndex", START_SCREEN_INDEX);
     start->addTransition(ui->newGameBtn, SIGNAL(clicked()), game);
     start->addTransition(ui->settingBtn, SIGNAL(clicked()), setting);
 
+
     game->assignProperty(ui->stackedWidget, "currentIndex", GAME_SCREEN_INDEX);
     game->addTransition(ui->exitGameBtn, SIGNAL(clicked()), start);
 
-    //setting->assignProperty(ui->stackedWidget, "currendIndex", SETTING_SCREEN_INDEX);
 
     stateOfGame->addState(start);
     stateOfGame->addState(game);
-    //stateOfGame->addState(setting);
-    //stateOfGame->addState(youAreWinner);
+    stateOfGame->addState(setting);
+
     stateOfGame->setInitialState(start);
     stateOfGame->start();
 }
