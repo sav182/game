@@ -22,9 +22,8 @@ public:
     ~MainWindow();
     void makeTransition();
 
-
-signals:
-    void openWindow(QString key);
+public slots:
+    void saveSettings();
 
 private:
     Ui::MainWindow *ui;

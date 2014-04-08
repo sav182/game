@@ -15,6 +15,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
 
     initAllStateAndStartMachine();
+    connect(ui->saveSettingBtn, SIGNAL(clicked()), this, SLOT(saveSettings));
 }
 
 MainWindow::~MainWindow()
@@ -44,3 +45,9 @@ void MainWindow::initAllStateAndStartMachine(){
     stateOfGame->start();
 }
 
+void MainWindow::saveSettings(){
+    // TODO
+    // develop class which keep settings
+    // rewrite serting
+    qDebug() << "save Settings";
+}
