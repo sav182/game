@@ -1,6 +1,9 @@
 QWidget#gameStart{
 	background: url(qss/img/bg.png) left top no-repeat;	
 }
+QWidget#gameSetting{
+	background: url(qss/img/bg.png) left top no-repeat;	
+}
 QWidget#gameTitleLabel{
 	font: 48px 'Arial';
 	color: #a27031;
