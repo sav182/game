@@ -9,7 +9,7 @@ QString loadStyleSheetFromFileAndReplaceUrlPath(QString file, QString folderForU
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    QString stylSheet = styleSheetFromFile(a.applicationDirPath() + QString("/qss/style.css"), a.applicationDirPath());
+    QString stylSheet = loadStyleSheetFromFileAndReplaceUrlPath(a.applicationDirPath() + QString("/qss/style.css"), a.applicationDirPath());
     qDebug() << stylSheet;
     a.setStyleSheet(stylSheet);
 
